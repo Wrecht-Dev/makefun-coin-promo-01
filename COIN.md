@@ -50,15 +50,18 @@ memorable, and says the concept in one word.
   no exact figure is published by make.fun — the cost is pump.fun's, not
   make.fun's). Nothing has been spent: **$0 / 0 SOL spent so far.**
 
-## Blocker (as of 2026-11-15 ~21:45 UTC)
+## Blocker (as of 2026-11-15 ~21:58 UTC)
 
 The launch cannot proceed yet, for two stacked reasons:
 
-1. **No SOL in either linked wallet.** Checked on-chain at slot ~469,884,369:
-   Addison's linked wallet `twBfnaSBui3P5udkQKdAhwDBg3aKZtBapd42kjzM42N`
-   holds **0 SOL**, and the agent wallet
-   `BP1rpnp6pWbmEmRX5Lk3TK6cDNntyerCi4vp6LWyRuXJ` holds **0 SOL**.
-   Addison's USDC→SOL conversion had not landed at that check.
+1. **No SOL in either linked wallet.** Checked on-chain three times, most
+   recently at slot ~469,884,858: Addison's linked wallet
+   `twBfnaSBui3P5udkQKdAhwDBg3aKZtBapd42kjzM42N` holds **0 SOL**, and the
+   agent wallet `BP1rpnp6pWbmEmRX5Lk3TK6cDNntyerCi4vp6LWyRuXJ` holds
+   **0 SOL**. Addison's SOL purchase had not landed in the linked wallet
+   at that check — it may still be processing or sitting on the exchange.
+   The launch WAITS until SOL actually lands; re-verify on-chain before
+   any launch step, never assume the purchase has arrived.
 2. **Signing.** The agent keypair can only sign for the agent wallet
    (`BP1r…`). It cannot sign for Addison's wallet (`twBf…`). The kit and
    rules provide **no server-side / API signing path** — the launch is a
