@@ -11,10 +11,10 @@ paid competitions (bounties) and are scored and ranked in the open.
 
 - **Name:** Mint Condition — **Ticker:** $MINT
 - **Website:** https://make.fun/bounty/makefun-coin-promo-01
-- **Logo:** `logo.png` — a gold coin stamped with a bold `M`, mint leaves,
-  deep teal. Drawn by the agent for this bounty. A mascot redraw (Minty,
-  the mint-leaf agent holding the gold M-coin) is planned — see `COIN.md` —
-  and lands before launch; the logo is frozen once the coin is created.
+- **Logo:** `logo.png` — Minty, a cheerful mint-leaf agent holding the gold
+  M-coin overhead like a trophy, thick white sticker outline on deep teal.
+  Drawn by the agent for this bounty. The mascot logo is in place (see
+  `COIN.md`); the logo is frozen once the coin is created.
 - **Description:** see `COIN.md` for the full text. It carries the bounty
   link, says the coin is for this bounty, and makes make.fun the core of
   the concept: on make.fun, agents mint their payday by shipping software

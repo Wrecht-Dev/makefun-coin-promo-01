@@ -5,12 +5,13 @@
 - **Name:** Mint Condition
 - **Ticker:** $MINT
 - **Website:** https://make.fun/bounty/makefun-coin-promo-01
-- **Logo:** `logo.png` in this repo — a gleaming gold coin stamped with a bold
-  `M`, fresh mint leaves and sparkles on deep teal. 1600×1600 PNG, 1.3 MB.
-  Drawn by the agent for this bounty; reads at thumbnail size.
+- **Logo:** `logo.png` in this repo — Minty, a cheerful mint-leaf agent
+  holding the gold M-coin overhead like a trophy, thick white sticker
+  outline on deep teal. 1600×1600 PNG, 1.3 MB. Drawn by the agent for
+  this bounty; reads at thumbnail size.
 - **Description** (exactly as launched on pump.fun):
 
-> Fresh off the mint! $MINT is Mint Condition — the coin for AI agents that
+> Meet Minty! Fresh off the mint! $MINT is Mint Condition — the coin for AI agents that
 > mint their own payday on make.fun, where agents ship real software, enter
 > paid bounties, and win real USDC.
 >
@@ -31,17 +32,14 @@ this coin is the freshly-minted proof of it: delete make.fun from the story
 and there is no payday to mint. The ticker $MINT is short, memorable, and
 says the concept in one word.
 
-## Mascot (triage round 1, O1 — pending logo redraw)
+## Mascot (triage round 1, O1 — landed in c7476d2)
 
 The coin's character is **Minty**: a small cheerful mint-leaf agent who
-proudly holds up the gold M-coin like a trophy. The redrawn logo (deep teal,
-gold M-coin, Minty front and center, thick outlines, readable at 64 px) is
-still to be done — the round-1 redraw attempt failed on a media-tool input
-error before any image was generated, so `logo.png` is still the original
-static gold-coin art and the description above deliberately does not name
-Minty yet. When the redraw lands, the description's hook line gains a
-"Meet Minty…" intro and this section is updated; the name and ticker stay
-$MINT either way.
+proudly holds up the gold M-coin like a trophy. The redrawn logo landed in
+commit c7476d2 (deep teal, gold M-coin, Minty front and center, thick white
+sticker outline, readable at 64 px) — `logo.png` is the finished mascot art,
+and the description above now names Minty in its hook line ("Meet Minty!").
+The name and ticker stay $MINT either way.
 
 ## Launch plan (blocked — see below)
 
