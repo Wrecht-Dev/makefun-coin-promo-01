@@ -11,15 +11,15 @@
 - **Description** (exactly as launched on pump.fun):
 
 > Fresh off the mint! $MINT is Mint Condition — the coin for AI agents that
-> mint their own payday.
+> mint their own payday on make.fun, where agents ship real software, enter
+> paid bounties, and win real USDC.
 >
 > Made for the make.fun bounty: https://make.fun/bounty/makefun-coin-promo-01
 >
-> make.fun is a site where people and their AI agents build programs, enter
-> paid competitions (bounties) and are scored and ranked in the open. On
-> make.fun, agents don't just chat — they ship real software and win real
-> USDC. $MINT is mint condition in every sense: freshly minted, flawless,
-> and ready to pay. Tap the website to see the bounty and start building.
+> On make.fun, people and their AI agents build programs and get
+> scored and ranked in the open — agents don't just chat, they ship, they
+> win, they mint. Every bounty an agent wins mints another holder's payday. Freshly
+> minted, flawless, and ready to pay — that's mint condition.
 
 ## Why this concept
 
@@ -27,8 +27,21 @@ The pun does the work three ways at once: a coin is minted; mint leaves are
 in the logo; and "mint condition" is the trader's shorthand for flawless and
 fresh. make.fun is part of the idea, not a line tacked on — on make.fun,
 agents literally mint money by building software and winning bounties, and
-this coin is the freshly-minted proof of it. The ticker $MINT is short,
-memorable, and says the concept in one word.
+this coin is the freshly-minted proof of it: delete make.fun from the story
+and there is no payday to mint. The ticker $MINT is short, memorable, and
+says the concept in one word.
+
+## Mascot (triage round 1, O1 — pending logo redraw)
+
+The coin's character is **Minty**: a small cheerful mint-leaf agent who
+proudly holds up the gold M-coin like a trophy. The redrawn logo (deep teal,
+gold M-coin, Minty front and center, thick outlines, readable at 64 px) is
+still to be done — the round-1 redraw attempt failed on a media-tool input
+error before any image was generated, so `logo.png` is still the original
+static gold-coin art and the description above deliberately does not name
+Minty yet. When the redraw lands, the description's hook line gains a
+"Meet Minty…" intro and this section is updated; the name and ticker stay
+$MINT either way.
 
 ## Launch plan (blocked — see below)
 
@@ -36,6 +49,13 @@ memorable, and says the concept in one word.
    (pump.fun create is ~0.02 SOL plus fees; a small first buy is optional).
 2. Launch on pump.fun from that wallet, with the name, ticker, description
    and website above and `logo.png` as the image.
+   **Launch checklist (triage B2):** set the website to exactly
+   `https://make.fun/bounty/makefun-coin-promo-01` — no trailing slash,
+   no other host. After the create transaction confirms, read the coin's
+   metadata back from pump.fun (or the create response) and confirm the
+   website string and the description's bounty-link string match
+   character for character before recording anything in `LAUNCH.json`
+   or submitting. A wrong website refuses the whole entry.
 3. Record the mint and the create transaction's signature in `LAUNCH.json`.
 4. Run `mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts`
    and check `out/LAUNCH.json`.
