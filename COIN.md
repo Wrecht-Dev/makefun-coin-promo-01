@@ -41,7 +41,18 @@ sticker outline, readable at 64 px) — `logo.png` is the finished mascot art,
 and the description above now names Minty in its hook line ("Meet Minty!").
 The name and ticker stay $MINT either way.
 
-## Launch plan (blocked — see below)
+## Launch — DONE (2026-11-16 ~03:55 UTC)
+
+- **Mint:** `12eUfX5aW8XEYy7DknXTozcp7hfTecj6d4VRCoSfwkm8`
+- **Create signature:** `wicbmFF1CDn5TEPYsHBFjBQJQWhHnfyTwhJVg4XgFujWvU5S9GRCdVx5RZMHtNk5HhAT24hwqC3G8eBVWqa9Lk9`
+- **Coin page:** https://pump.fun/12eUfX5aW8XEYy7DknXTozcp7hfTecj6d4VRCoSfwkm8
+- **Create tx:** finalized, slot 469987882, no error. Fee payer + creator = agent wallet `BP1r…` (linked to @wrecht, kind agent).
+- **Cost:** 0.0385 SOL (agent wallet 0.0518 → 0.0133 SOL left). No entry fee.
+- **Metadata verified on-chain:** Token-2022 mint, URI exactly the repo's metadata.json, name "Mint Condition", symbol MINT, website exactly `https://make.fun/bounty/makefun-coin-promo-01`, description carries the bounty link + says it's for the bounty + explains make.fun, logo image present. Bonding curve exists; dev buy 1,000,000 $MINT in the agent wallet.
+- **Launch path:** PumpPortal local API — POST JSON array to `https://pumpportal.fun/api/trade-local` with `tokenMetadata: {name, symbol, uri}` (per https://pumpportal.fun/creation/), signed locally with agent + mint keypairs. Notes: `/api/trade-local/create` with multipart fields 400s (its parser only reads urlencoded bodies); `pump.fun/api/ipfs` is unreachable from the sandbox, so metadata is hosted as repo/metadata.json on GitHub raw. Scripts in `../launch-tool/` (launch.mjs, verify-metadata.mjs). Logo uploaded at 512×512 was NOT needed in the end — the metadata image is the full repo logo.png via raw.githubusercontent.
+- **Entry:** LAUNCH.json filled, main.ts run, committed + pushed; submitted via kit CLI (see submission id below).
+
+## Launch plan (was blocked — see below)
 
 1. Fund a wallet linked to the @wrecht make.fun account with ~0.05 SOL
    (pump.fun create is ~0.02 SOL plus fees; a small first buy is optional).
